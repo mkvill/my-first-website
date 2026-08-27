@@ -1,33 +1,162 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
-    text-align: center;
+    padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #222;
+}
+
+/* Navigation */
+
 header {
-    padding: 50px 20px;
+    background: #111827;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav {
-    padding: 15px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
 }
 
 nav a {
-    margin: 0 10px;
+    color: white;
     text-decoration: none;
+    margin-left: 18px;
 }
 
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+nav a:hover {
+    text-decoration: underline;
 }
+
+/* Sections */
 
 section {
-    padding: 30px 10px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 20px;
+    text-align: center;
 }
 
+/* Home */
+
+#home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+#home h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 600px;
+}
+
+/* Buttons */
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Skills */
+
+#skills div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#skills p {
+    padding: 15px 25px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Projects */
+
+article {
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+
 footer {
-    margin-top: 40px;
-    padding: 20px;
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    #home h2 {
+        font-size: 23px;
+    }
 }

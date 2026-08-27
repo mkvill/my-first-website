@@ -1,52 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yonas's Website</title>
+
+    <title>Yonas Daniel | Web Developer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Yonas's Website</h1>
-        <p>Welcome to my personal website</p>
+        <nav>
+            <h2>Yonas</h2>
+
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-    </nav>
-
     <main>
-        <section>
-            <h2>Hello! 👋</h2>
-            <p>
-                I am learning web development using HTML, CSS,
-                JavaScript and Termux.
-            </p><button onclick="showMessage()">Click Me</button>
-        </section>
 
-        <section>
-            <h2>My Skills</h2>
-            <p>HTML • CSS • JavaScript • Git • Linux</p>
-        </section>
+        <section id="home">
+            <p>Hello, I'm</p>
 
-        <section>
-            <h2>My Goal</h2>
+            <h1>Yonas Daniel</h1>
+
+            <h2>Web Developer</h2>
+
             <p>
-                To become a professional web developer and build
-                useful applications.
+                I build websites and web applications
+                using modern web technologies.
             </p>
+
+            <button onclick="showMessage()">
+                Say Hello
+            </button>
         </section>
+
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                I'm learning web development and programming.
+                I enjoy building projects and solving problems
+                with technology.
+            </p>
+
+        </section>
+
+
+        <section id="skills">
+
+            <h2>My Skills</h2>
+
+            <div>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Git & GitHub</p>
+                <p>Linux / Termux</p>
+            </div>
+
+        </section>
+
+
+        <section id="projects">
+
+            <h2>My Projects</h2>
+
+            <article>
+                <h3>My First Website</h3>
+
+                <p>
+                    A website I built using HTML, CSS,
+                    JavaScript and Termux.
+                </p>
+
+                <a href="https://mkvill.github.io/my-first-website/">
+                    View Project
+                </a>
+            </article>
+
+        </section>
+
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Interested in working together?
+            </p>
+
+            <button onclick="showMessage()">
+                Contact Me
+            </button>
+
+        </section>
+
     </main>
 
+
     <footer>
-        <p>© 2026 Yonas. All rights reserved.</p>
+        <p>© 2026 Yonas Daniel</p>
     </footer>
-<script src="script.js"></script>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
