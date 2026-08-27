@@ -1,0 +1,3 @@
+I am learning Termux.
+Termux is my Linux environment.
+I will learn programming with it.
